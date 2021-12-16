@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodeapp-deployment
+  name: test-cicd
   labels:
-    app: nodeapp
+    app: test-cicd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nodeapp
+      app: test-cicd
   template:
     metadata:
       labels:
-        app: nodeapp
+        app: test-cicd
     spec:
       containers:
-        - name: nodeserver
-          image: thetips4you/nodeapp:latest
+        - name: test-cicd
+          image: fr000st91/test-cicd:latest
           ports:
-            - containerPort: 3000
+            - containerPort: 8090
