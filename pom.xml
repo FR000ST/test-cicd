@@ -11,6 +11,7 @@
         <relativePath/>
     </parent>
 
+         
     <groupId>test</groupId>
     <artifactId>test-cicd</artifactId>
     <version>1.0-SNAPSHOT</version>
